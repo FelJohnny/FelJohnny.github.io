@@ -14,4 +14,4 @@ jobs:
           server: felipejohnny.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
+          port: ${{ secrets.FTP_PORT }}
