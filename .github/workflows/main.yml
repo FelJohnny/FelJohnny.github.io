@@ -14,5 +14,4 @@ jobs:
           server: 162.241.2.146
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
           port: 22
