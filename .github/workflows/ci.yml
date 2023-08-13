@@ -14,8 +14,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: felipejohnny.com
-          port: ${{ secrets.FTP_PORT }}
+          server: ftp.felipejohnny.com
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: ${{ secrets.FTP_PORT }}
           server-dir: ./public_html/
